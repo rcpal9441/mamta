@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make My Foam</title>
+    <link rel="icon" href="img/favIcon.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="fonts/font-awesome.css" rel="stylesheet" />
+    <link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+
+    <!-- Header starts -->
+    <header>
+
+        <!-- Logo starts -->
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="" />
+        </a>
+        <!-- Logo ends -->
+
+        <!-- Header actions starts -->
+        <ul id="header-actions" class="clearfix">
+            <li class="list-box user-admin hidden-xs dropdown">
+                <a  href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-user"></i>
+                </a>
+                <ul class="dropdown-menu sm">
+                    <li class="dropdown-content">
+                        <a href="#">Edit Profile</a>
+                        <a href="#">Change Password</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" id="toggleMenu" class="toggle-menu">
+                    <i class="collapse-menu-icon"></i>
+                </button>
+            </li>
+        </ul>
+        <!-- Header actions ends -->
+
+        <div class="custom-search hidden-sm hidden-xs">
+            <input type="text" class="search-query" placeholder="Search here ...">
+            <i class="icon-search3"></i>
+        </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Left sidebar start -->
+    <div class="vertical-nav">
+
+        <!-- Collapse menu starts -->
+        <button class="collapse-menu navButton">
+            <i class="icon-menu2"></i>
+        </button>
+        <!-- Collapse menu ends -->
+
+        <!-- Sidebar menu starts -->
+        <ul class="menu clearfix">
+            <li>
+                <a href="#">
+                    <i class="icon-air-play"></i>
+                    <span class="menu-item">Dashboard</span>
+                </a>
+            </li>
+            <li>
+               <a href="Product.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Add Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="ProductsView.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Our Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="FoamCalculator.html">
+                    <i class="fa fa-calculator"></i>
+                    <span class="menu-item">Foam Calculator</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-key"></i>
+                    <span class="menu-item">Change Password</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-layers4"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-layers4"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-layers4"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Sidebar menu ends -->
+    </div>
+    <!-- Left sidebar end -->
+
+    <!-- Dashboard Wrapper Start -->
+    <div class="dashboard-wrapper dashboard-wrapper-lg">
+
+        <!-- Container fluid Starts -->
+        <div class="container-fluid">
+
+            <!-- Top Bar Starts -->
+            <div class="top-bar clearfix">
+                <div class="row gutter">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="page-title">
+                            <h3>Add Product</h3>
+                            <p>Dashboard / <a href="javascript:void()">Add Product</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+                </div>
+            </div>
+            <!-- Top Bar Ends -->
+
+            <!-- Row Starts -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row gutter">
+                                <div class="col-md-12 form-group">
+                                    <div class="form-group no-margin">
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Foam
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Memory Foam
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Latex
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-md-4 form-group">
+                                    <label class="control-label">Product Name</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="control-label">Product Title</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="control-label">Type</label>
+                                    <select class="form-control">
+                                        <option>Select Type</option>
+                                        <option>Foam</option>
+                                        <option>Memory Foam</option>
+                                        <option>Latex</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <div class="row gutter">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Width</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Height</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Depth</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label class="control-label">Product Image</label>
+                                    <input type="file" name="pic" accept="image/*" class="form-control imgUpload" />
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <div class="col-md-2">
+                                    <label class="control-label">More Options:</label>
+                                </div>
+                                <div class="col-md-8 form-group">
+                                    <div class="form-group no-margin">
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Cover
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Dacron Wrap/Fill
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Foam Type
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio">
+                                            Delivery
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <div class="form-group no-margin">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">
+                                            Cover
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">
+                                            Dacron Wrap/Fill
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">
+                                            Foam Type
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row Ends -->
+
+
+
+        </div>
+        <!-- Container fluid ends -->
+
+    </div>
+    <!-- Dashboard Wrapper End -->
+
+    <!-- Footer Start -->
+    <footer>
+        Copyright &copy; Make My Foam <span>2019</span>. All Rights Reserved.
+    </footer>
+    <!-- Footer end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollup/jquery.scrollUp.js"></script>
+    <script src="js/bsvalidator/bootstrapValidator.js"></script>
+    <script src="js/bsvalidator/custom-validations.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

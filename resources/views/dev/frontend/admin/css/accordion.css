@@ -1,0 +1,83 @@
+.accordion-item {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+.accordion-item.active .heading {
+  color: #968e8f;
+}
+.accordion-item.active .icon {
+  background: #fefefe;
+}
+/*.accordion-item.active .icon:before {
+  background: #968e8f;
+}*/
+.accordion-item.active .icon:after {
+  width: 0;
+}
+.accordion-item .heading {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  padding: 10px 15px 10px 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: auto;
+  border: none;
+}
+
+.accordion-item .heading:hover {
+  color: #f28020;
+}
+/*.accordion-item .heading:hover .icon:before, .accordion-item .heading:hover .icon:after {
+  background: #968e8f;
+}*/
+.accordion-item .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  line-height: 25px;
+}
+
+.accordion-item .icon:before {
+    content:'\f067';
+    position:absolute;
+    font-family:'FontAwesome';
+}
+
+.accordion-item.active .icon:before {content:'\f068';}
+
+
+/*.accordion-item .icon:before, .accordion-item .icon:after {
+  content: '';
+  width: 1.25rem;
+  height: 0.20rem;
+  background: #564e50;
+  position: absolute;
+  border-radius: 3px;
+  left: 50%;
+  top: 50%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.accordion-item .icon:after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  z-index: -1;
+}*/
+.accordion-item .content {
+  display: none;
+}
+.accordion-item .content p {
+  margin-top: 0;
+}

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Triangle Cushion</title>
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+</head>
+
+<body class="inner-page">
+
+    <!-- HEADER START -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-all fixed-top-head header-innerpage">
+            <a class="navbar-brand" href="index.html">
+
+                <img src="assets/images/logo.png" class="image" alt="logo">
+
+            </a>
+            <div class="ml-auto button-action ml-auto dropdown">
+                <!-- <button class="btn-01 btn">Log In
+                    <i class="fas fa-user"></i>
+                </button> -->
+
+                <button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <i class="far fa-user"></i>Your Account</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-shopping-bag"></i>Your Orders </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-heart"></i>Shortlist</a>
+                    <!-- <span class="para-1-dropdown">If you are new user</span> -->
+                    <div class="btn-inline d-flex flex-column">
+                        <button class="   btn-link" data-toggle="modal" data-target="#exampleModalCenter1">Register </button>
+                        <button class="btn-01 btn dropdown-login" data-toggle="modal" data-target="#exampleModalCenter">Log In</button>
+                    </div>
+                </div>
+            </div>
+            <a href="cart.html" class="cart-mobile">
+                <span class="item-count">2</span>
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/images/bars.png">
+            </button>
+
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <section class="sizes custom-shape bg-grey-01">
+        <!-- Shapes container start -->
+        
+        <div class="container-fluid custom-shape-container">
+            <div class="row">
+                <div class="custom-col">
+                    <a href="cushion-triangle.html" class="size-srch bg-gray active">
+                        <div class="size-icon icon1">
+                            <img src="assets/images/icon/triangle-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Triangle </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-square.html" class="size-srch bg-gray">
+                        <div class="size-icon icon2">
+                            <img src="assets/images/icon/foam-square-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Square </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-rectangle.html" class="size-srch bg-gray">
+                        <div class="size-icon icon3">
+                            <img src="assets/images/icon/Rectangle-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Rectangle </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-pentagon.html" class="size-srch bg-gray">
+                        <div class="size-icon icon4">
+                            <img src="assets/images/icon/Pentagon-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Pentagon</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-octagon.html" class="size-srch bg-gray">
+                        <div class="size-icon icon5">
+                            <img src="assets/images/icon/Octagon-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Octagon</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-l-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon6">
+                            <img src="assets/images/icon/L-shape-cushion-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>L-cushion</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-t-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon7">
+                            <img src="assets/images/icon/T-cushion-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>T-cushion</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-circle.html" class="size-srch bg-gray">
+                        <div class="size-icon icon8">
+                            <img src="assets/images/icon/Circle-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Circle</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-wedge.html" class="size-srch bg-gray">
+                        <div class="size-icon icon17">
+                            <img src="assets/images/icon/Wedge-cushion-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Wedge </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-bolster-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon9">
+                            <img src="assets/images/icon/Bolster-Cushion-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Bolster </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-cylinder-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon10">
+                            <img src="assets/images/icon/Cylinder-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Cylinder</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-diamond-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon11">
+                            <img src="assets/images/icon/Diamond-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Diamond</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-star-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon12">
+                            <img src="assets/images/icon/Star-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Star</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-alberta-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon13">
+                            <img src="assets/images/icon/Alberta-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Alberta </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-maple-shape.html" class="size-srch bg-gray">
+                        <div class="size-icon icon14">
+                            <img src="assets/images/icon/maple-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Maple Leaf</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="custom-col">
+                    <a href="cushion-custome-size.html" class="size-srch bg-gray">
+                        <div class="size-icon icon16">
+                            <img class="w-75" src="assets/images/icon/Custom-foam-icon.png" alt="" />
+                        </div>
+                        <div class="size-head">
+                            <h3>Custom Size</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Shapes container END -->
+        <div class="custom-size-define">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-xl-8">
+                        <div class="custom-shape-left white-bx text-center">
+                            <div class="heading-06 text-left">
+                                <h4>Triangle Cushion</h4>
+                            </div>
+                            <div class="image-bx">
+                                <img src="assets/images/Triangle-shape-foam-page-icon.png" class="img-fluid" alt="Triangle-shape-foam-page-icon">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xl-4">
+                        <div class="chekc-out-box  login-modal">
+                            <div class="heading-06 mb-4 d-flex align-items-center text-left">
+                                <div class="step">1</div>
+                                <h4 class="mb-0">Enter Measurment</h4>
+                                
+                            </div>
+                            <form class="mb-5 measurment-form">
+                                <div class="main-form row no-gutters">
+                                    <section class="col-md-6 pr-2">
+                                        <div class="form-group fix-width lable-top">
+                                            <input type="text" class="inputText" id="depth" required />
+                                            <label class="floating-label">A</label>
+                                            <select class="form-control" id="exampleFormControlSelect1d">
+                                                <option value="in">in</option>
+                                                <option value="cm">cm </option>
+                                                <option value="mm">mm </option>
+                                                <option value="ft">ft </option>
+                                                <option value="m">m</option>
+                                            </select>
+                                        </div>
+                                    </section>
+                                    <section class="col-md-6 pl-1">
+                                        <div class="form-group fix-width lable-top">
+                                            <input type="text" class="inputText" id="depth" required />
+                                            <label class="floating-label">B</label>
+                                            <select class="form-control" id="exampleFormControlSelect1d">
+                                                <option value="in">in</option>
+                                                <option value="cm">cm </option>
+                                                <option value="mm">mm </option>
+                                                <option value="ft">ft </option>
+                                                <option value="m">m</option>
+                                            </select>
+                                        </div>
+                                    </section>
+                                    <section class="col-md-6 pr-2">
+                                        <div class="form-group fix-width lable-top">
+                                            <input type="text" class="inputText" id="depth" required />
+                                            <label class="floating-label">C</label>
+                                            <select class="form-control" id="exampleFormControlSelect1d">
+                                                <option value="in">in</option>
+                                                <option value="cm">cm </option>
+                                                <option value="mm">mm </option>
+                                                <option value="ft">ft </option>
+                                                <option value="m">m</option>
+                                            </select>
+                                        </div>
+                                    </section>
+                                    <section class="col-md-12">
+                                        <div class="form-group fix-width lable-top">
+                                            <input type="text" class="inputText" id="depth" required />
+                                            <label class="floating-label">Depth</label>
+                                            <select class="form-control" id="exampleFormControlSelect1d">
+                                                <option value="in">in</option>
+                                                <option value="cm">cm </option>
+                                                <option value="mm">mm </option>
+                                                <option value="ft">ft </option>
+                                                <option value="m">m</option>
+                                            </select>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                                <!-- end main-form row -->
+                            </form>
+                         
+                            <div class="select-firmness mb-5">
+                                <div class="heading-06  d-flex align-items-center text-left mb-4">
+                                    <div class="step">2</div>
+                                    <h4 class="mb-0">Select Firmness</h4>
+                                   
+                                </div>
+                                <ul class="d-flex justify-content-between nav nav-pills main-tab-menu" id="pills-tab" role="tablist">
+                                    <li class="col nav-item p-0">
+                                        <a class="nav-link text-uppercase" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">Foam</a>
+                                    </li>
+                                    <li class="col nav-item p-0">
+                                        <a class="nav-link text-uppercase" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">Memory foam</a>
+                                    </li>
+                                    <li class="col nav-item p-0">
+                                        <a class="nav-link text-uppercase" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                            aria-selected="false">Latex</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <ul class="nav nav-pills" id="pills-tab1" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-home-tab1" data-toggle="pill" href="#pills-home1" role="tab" aria-controls="pills-home" aria-selected="true">High Density
+                                                </a>
+                                            </li>
+                                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-profile-tab1" data-toggle="pill" href="#pills-profile1" role="tab" aria-controls="pills-profile"
+                                                    aria-selected="false">Standard density</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
+                                                <div class="d-flex buton-selection">
+                                                    <div class="btn-group-toggle mr-1" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> XF (Extra firm)
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> F (Firm)
+                                                        </label>
+                                                    </div>
+                                                    <!--<div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off">  F (Firm)
+                                                        </label>
+                                                    </div>
+                                                    
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> Standard density
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> MF (Medium-firm)
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> MS (Medium-soft)
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary active">
+                                                            <input type="checkbox" checked autocomplete="off"> S (Soft)
+                                                        </label>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1">
+                                                <div class="d-flex buton-selection justify-content-between pl-1 pr-2">
+                                                    <div class="btn-group-toggle mr-1" data-toggle="buttons" style="flex:1;">
+                                                        <label class="btn btn-secondary btn-block">
+                                                            <input type="checkbox" checked autocomplete="off"> MF (Medium-firm)
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle mr-1" data-toggle="buttons" style="flex:1;">
+                                                        <label class="btn btn-secondary btn-block active">
+                                                            <input type="checkbox" checked autocomplete="off"> MS (Medium-soft)
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons" style="flex:1;">
+                                                        <label class="btn btn-secondary btn-block active">
+                                                            <input type="checkbox" checked autocomplete="off"> S (Soft)
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <!--<ul class="nav nav-pills mb-3" id="pills-tab2" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-home-tab2" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home2"
+                                                    aria-selected="true">High Density 2
+                                                    <a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-profile-tab2" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile"
+                                                    aria-selected="false">Standard Density 2</a>
+                                            </li>
+                                        </ul>-->
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab2">
+                                                <div class="d-flex buton-selection">
+                                                    <div class="btn-group-toggle mr-1" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> Regular memory foam
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary active">
+                                                            <input type="checkbox" checked autocomplete="off"> Gel memory foam
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile2" role="tabpane2" aria-labelledby="pills-profile-tab2">
+                                                <div class="d-flex buton-selection">
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> Extra Firm (XF) 2
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary active">
+                                                            <input type="checkbox" checked autocomplete="off"> Firm (F) 2
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                        <!--<ul class="nav nav-pills mb-3" id="pills-tab2" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-home-tab3" data-toggle="pill" href="#pills-home3" role="tab" aria-controls="pills-home3"
+                                                    aria-selected="true">High Density 3
+                                                    <a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-profile-tab3" data-toggle="pill" href="#pills-profile3" role="tab" aria-controls="pills-profile"
+                                                    aria-selected="false">Standard Density 3</a>
+                                            </li>
+                                        </ul>-->
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home3" role="tabpanel" aria-labelledby="pills-home-tab3">
+                                                <div class="d-flex buton-selection justify-content-between pl-1 pr-2">
+                                                    <div class="btn-group-toggle mr-1" data-toggle="buttons" style="flex:1;">
+                                                        <label class="btn btn-secondary btn-block ">
+                                                            <input type="checkbox" checked autocomplete="off"> Firm
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle mr-1" data-toggle="buttons" style="flex:1;">
+                                                        <label class="btn btn-secondary btn-block active">
+                                                            <input type="checkbox" checked autocomplete="off"> Standard
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons" style="flex:1;">
+                                                        <label class="btn btn-secondary btn-block active">
+                                                            <input type="checkbox" checked autocomplete="off"> Soft
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile3" role="tabpane3" aria-labelledby="pills-profile-tab3">
+                                                <div class="d-flex buton-selection">
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary ">
+                                                            <input type="checkbox" checked autocomplete="off"> Extra Firm (XF) 3
+                                                        </label>
+                                                    </div>
+                                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-secondary active">
+                                                            <input type="checkbox" checked autocomplete="off"> Firm (F) 3
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="heading-06 mb-4 d-flex align-items-center text-left">
+                                <div class="step">3</div><h4 class="mb-0">Deliver To</h4>
+                                
+                            </div>
+                            <div class="cover-total title-section font-roboto delivery-action row">
+                                <div class="col-sm-6">
+                                    <div class="form-group fix-width lable-top">
+                                        <select class="form-control wful" id="delivery">
+                                            <option value="d">Deliver</option>
+                                            <option value="p">Pickup </option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-6 pl-0">
+                                    <div class="dropdown text-left">
+                                    
+                                        <div class="form-group fix-width delivery  p-0" id="">
+                                        <div id="textbox">
+                                        <input class="pt-0" type="text" placeholder=" M3C 0C1 " onfocus="this.placeholder = ''" onblur="this.placeholder = 'M3C 0C1'" id="deliverypin" />
+                                        <a href="#" class="chake-locat"> Check</a>
+                                        </div>
+                                        
+                                        <div id="longtext"><p class="delivery-address"> 11620 178 St NW, Edmonton, AB T5S 2E6 Canada</p></div>
+                                       </div>
+                                       
+                                    <!--<div class="form-group fix-width delivery  p-0" id="">
+                                    	<input type="hidden" value="11620 178 St NW, Edmonton, AB T5S 2E6 Canada" id="address"/>
+                                    </div>-->
+                                    
+                                    
+                                    
+                                    
+                                      <!--<span class="delivery-address">11620 178 St NW, Edmonton, AB T5S 2E6 Canada</span>  -->
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cover-total subtotal  d-flex">
+                                <h3>Delivery Charges</h3>
+                                <h3 class="ml-auto">$12</h3>
+                            </div>
+                            <div class="cover-total subtotal  d-flex">
+                                <h3>Subtotal</h3>
+                                <h3 class="ml-auto">$40</h3>
+                            </div>
+                            <div class="cover-total subtotal  d-flex">
+                                <h3>+5% GST</h3>
+                                <h3 class="ml-auto">$9</h3>
+                            </div>
+                            <div class="cover-total subtotal pb-0 d-flex">
+                                <h3>+7% GST</h3>
+                                <h3 class="ml-auto">$10</h3>
+                            </div>
+                            <hr>
+                            <div class="cover-total total d-flex align-items-center justify-content-between total">
+                                <h5 class="mb-0">Total</h5>
+                                <h2 class="mb-0">$118</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-01 w-100 font-roboto">Add to Cart</a>
+                            </div>
+                            <!--<div class="para-1-dropdown mt-2 text-center font-roboto">
+                                <span>OR</span>
+                            </div>
+                            <div class="p-15 bt-paypal mt-2">
+                                <a href="#" class="btn btn-01 w-100 font-roboto">
+                                    <img src="assets/images/paypal.png" alt="paypal">
+                                </a>
+                            </div>
+                            <div class="p-15 mt-3">
+                                <img src="assets/images/payment-opt-paypal.png" class="mw-100 m-auto d-block" alt="paypal">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="f-custom-col col-01">
+                    <div class="logo-footer">
+                        <a href="index.html" class="footer-brand">
+                            <img src="assets/images/logo.png" />
+                        </a>
+                        <p class="para-2 mt-2 abtus">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <p class="contact-detail">
+                            315 St Germain Ave Toronto ON M5M 1W4(Toronto ,Ontario)
+                        </p>
+                    </div>
+                </div>
+                <div class="f-custom-col col-02">
+                    <h5 class="folloe-us"> By Use</h5>
+                    <div class="row moble-50">
+                        <ul class="col-sm-6  border-right">
+                            <li>
+                                <a class="anchorLink" href="#">RV
+                                </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#x">Guitar</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Bike </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Couch </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Chair </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#">Bar Stool</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#x">Gym Table</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Boat </a>
+                            </li>
+                        </ul>
+                        <ul class="col-sm-6">
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Arab Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Persian Cushions </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-custom-col col-03">
+                    <h5 class="folloe-us">Type Of Foam</h5>
+                    <ul>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self">Polyurethane Foam</a>
+                        </li>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self">Memory Foam </a>
+                        </li>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self"> Latex Dunlop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-custom-col col-04">
+                    <div class="ac-gf-footer-legal">
+                        <div class="social-footer">
+                            <h5 class="folloe-us">Contact Us </h5>
+                            <a href="#" class="contact-detail">
+                                <img src="assets/images/phone.png"> +1 613-979-4537
+                            </a>
+                            <a href="#" class="contact-detail">
+                                <img src="assets/images/email.png"> info@makemyfoam.com
+                            </a>
+                            <div class="social-menu">
+                                <h5 class="folloe-us">Follow Us
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <div class="img-payment">
+                            <img src="assets/images/payment-option.png"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ac-gf-footer-legal-copyright ">
+            <div class="container">
+                <div class="row no-gutters ">
+                    <div class="col-sm-5 text-left">
+                        <p> Copyright © 2018 Make My Foam All rights reserved</p>
+                    </div>
+                    <div class="col-sm-7 text-right links-footer">
+                        <a href="#">
+                            About Us
+                        </a>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                        <a href="#">
+                            Support
+                        </a>
+                        <a href="#">
+                            Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade login-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Login to Make My Foam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="email " class="inputText form-control" required="">
+                                <label class="floating-label"> Email Here </label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="password " class="inputText form-control" required="">
+                                <label class="floating-label">Enter Password</label>
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2">
+
+                            <button type="submit " class="btn btn-01 ml-auto w-100 text-center">Log In</button>
+                        </div>
+
+                        <div class="links-password">
+                            <a href="# " class="para-1-dropdown">Recover Password</a>
+                            <p class="">New to Make My Foam?
+                                <a href="# " class="para-1-dropdown ml-auto">Create Account</a>
+                            </p>
+                        </div>
+
+                        <div class="para-1-dropdown mt-4 text-center">
+                            <span>Or Login Using</span>
+                        </div>
+
+                        <div class="form-group form-inline text-center btn-social my-3">
+                            <a href="#" class="social-btn fb-btn">
+                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#" class="social-btn ml-3 ggle-btn ">
+                                <i class=" fab fa-google "></i> Google</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade login-modal" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sign Up to Make My Foam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="text" class="inputText form-control" required="">
+                                <label class="floating-label">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="number " class="inputText form-control" required="">
+                                <label class="floating-label"> Mobile Number</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="email " class="inputText form-control" required="">
+                                <label class="floating-label"> Email Here </label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="password " class="inputText form-control" required="">
+                                <label class="floating-label">Enter Password</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="text " class="inputText form-control" required="">
+                                <label class="floating-label">Your Adress</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2">
+
+                            <button type="submit " class="btn btn-01 ml-auto w-100 text-center">Continue</button>
+                        </div>
+
+
+                        <div class="links-password">
+                            <p class="">Already have an account?
+                                <a href="# " class="para-1-dropdown ml-auto"> Login!</a>
+                            </p>
+                        </div>
+                        <div class="para-1-dropdown mt-4 text-center">
+                            <span>Or Continue Using</span>
+                        </div>
+
+                        <div class="form-group form-inline text-center btn-social my-3">
+                            <a href="#" class="social-btn fb-btn">
+                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#" class="social-btn ml-3 ggle-btn ">
+                                <i class=" fab fa-google "></i> Google</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/3.1.1.jquery.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".list-icn").click(function () {
+
+                $(".grid-view").toggleClass("list-full").css({ "flex": "100%", "max-width": "100%" });
+            });
+            $(".grid-icn").click(function () {
+
+                $(".grid-view").removeClass("list-full").css({ "flex": "33.33%%", "max-width": "33.33%" });
+            });
+           $("#width").keyup(function(){
+           	var width= this.value;
+           	$("#imgwidth").val(width+" in");
+           	$("#imgwidthunder").val(width+" in");
+			}); 
+			$("#exampleFormControlSelect1w").change(function(){
+				var unitw=this.value;
+				var width=$("#width").val();
+				$("#imgwidth").val(width+" "+unitw);
+				$("#imgwidthunder").val(width+" "+unitw);
+			});
+			
+			$("#length").keyup(function(){
+           	var length= this.value;
+           	$("#imglength").val(length+" in");
+			}); 
+			$("#exampleFormControlSelect1l").change(function(){
+				var unitl=this.value;
+				var length=$("#length").val();
+				$("#imglength").val(length+" "+unitl);
+			});
+			
+			$("#depth").keyup(function(){
+           	var depth= this.value;
+           	$("#imgdepth").val(depth+" in");
+			}); 
+			$("#exampleFormControlSelect1d").change(function(){
+				var unitd=this.value;
+				var depth=$("#depth").val();
+				$("#imgdepth").val(depth+" "+unitd);
+			});
+			$("#longtext").hide();
+			$("#delivery").change(function(){
+				var delivery=this.value;
+				if(delivery=='p'){
+				var address=$("#address").val();
+				$("#textbox").hide();
+				$("#longtext").show();
+				}else if(delivery=='d'){
+					$("#textbox").show();
+				$("#longtext").hide();
+				}
+			});
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+        $('#accordion .card').click(function () {
+            $(this).addClass("active");
+        });
+
+    </script>
+
+    <script src="assets/js/3.1.1.jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select:not(.ignore)').niceSelect();
+            FastClick.attach(document.body);
+        });    
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64633646-1', 'auto');
+        ga('send', 'pageview');
+        
+    </script>
+    
+ 
+</body>
+
+</html>

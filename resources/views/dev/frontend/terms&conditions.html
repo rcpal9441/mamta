@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make My Foam</title>
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+</head>
+
+<body class="inner-page">
+
+    <!-- HEADER START -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-all fixed-top-head header-innerpage">
+            <a class="navbar-brand" href="index.html">
+
+                <img src="assets/images/logo.png" class="image" alt="logo">
+
+            </a>
+            <div class="ml-auto button-action ml-auto dropdown">
+                <!-- <button class="btn-01 btn">Log In
+                    <i class="fas fa-user"></i>
+                </button> -->
+
+                <button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <i class="far fa-user"></i>Your Account</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-shopping-bag"></i>Your Orders </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-heart"></i>Shortlist</a>
+                    <!-- <span class="para-1-dropdown">If you are new user</span> -->
+                    <div class="btn-inline d-flex flex-column">
+                        <button class="   btn-link" data-toggle="modal" data-target="#exampleModalCenter1">Register </button>
+                        <button class="btn-01 btn dropdown-login" data-toggle="modal" data-target="#exampleModalCenter">Log In</button>
+                    </div>
+                </div>
+            </div>
+            <a href="cart.html" class="cart-mobile">
+                <span class="item-count">2</span>
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/images/bars.png">
+            </button>
+
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <section class="banner inner-banner">
+        <div class="container">
+            <h2 class="inner-tiitle">Terms & Conditions</h2>
+        </div>
+    </section>
+    <section class="faq-section sec-pad sizes sec-pad">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 tc-wrap">
+                <p class="text-center tnc">PLEASE READ THE FOLLOWING TERMS AND CONDITIONS OF USE CAREFULLY BEFORE USING THIS WEBSITE. All users of this site agree that access to and use of this site are subject to the following terms and conditions and other applicable law. If you do not agree to these terms and conditions, please do not use this site.</p>
+                    <div class="heading-02">
+                        <h3>Copyright</h3>
+                    </div>
+                    <p class="text-center tnc">The entire content included in this site, including but not limited to text, graphics or code is copyrighted as a collective work under the United States and other copyright laws, and is the property of $(Make My Foam Products / The Healthy Bedroom). The collective work includes works that are licensed to $(Make My Foam Products / The Healthy Bedroom). Copyright 2019, $(Make My Foam Products / The Healthy Bedroom) ALL RIGHTS RESERVED. Permission is granted to electronically copy and print hard copy portions of this site for the sole purpose of placing an order with $(Make My Foam Products / The Healthy Bedroom) or purchasing $(Make My Foam Products / The Healthy Bedroom) products. You may display and, subject to any expressly stated restrictions or limitations relating to specific material, download or print portions of the material from the different areas of the site solely for your own non-commercial use, or to place an order with $(Make My Foam Products / The Healthy Bedroom.) or to purchase $(Make My Foam Products / The Healthy Bedroom.) products. Any other use, including but not limited to the reproduction, distribution, display or transmission of the content of this site is strictly prohibited, unless authorized by $(Make My Foam Products / The Healthy Bedroom.). You further agree not to change or delete any proprietary notices from materials downloaded from the site.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Trademarks</h3>
+                    </div>
+                    <p class="text-center tnc">All trademarks, service marks and trade names of $(Make My Foam Products / The Healthy Bedroom.) used in the site are trademarks or registered trademarks of $(Make My Foam Products / The Healthy Bedroom.)</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Warranty Disclaimer</h3>
+                    </div>
+                    <p class="text-center tnc">This site and the materials and products on this site are provided "as is" and without warranties of any kind, whether express or implied. To the fullest extent permissible pursuant to applicable law, $(Make My Foam Products / The Healthy Bedroom) disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose and non-infringement. $(Make My Foam Products / The Healthy Bedroom) does not represent or warrant that the functions contained in the site will be uninterrupted or error-free, that the defects will be corrected, or that this site or the server that makes the site available are free of viruses or other harmful components. $(Make My Foam Products / The Healthy Bedroom) does not make any warranties or representations regarding the use of the materials in this site in terms of their correctness, accuracy, adequacy, usefulness, timeliness, reliability or otherwise. Some states do not permit limitations or exclusions on warranties, so the above limitations may not apply to you.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Limitation of Liability</h3>
+                    </div>
+                    <p class="text-center tnc">www.tangerinefoam.com shall not be liable for any special or consequential damages that result from the use of, or the inability to use, the materials on this site or the performance of the products, even if $(Make My Foam Products / The Healthy Bedroom) has been advised of the possibility of such damages. Applicable law may not allow the limitation of exclusion of liability or incidental or consequential damages, so the above limitation or exclusion may not apply to you.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Typographical Error</h3>
+                    </div>
+                    <p class="text-center tnc">In the event that a $(Make My Foam Products / The Healthy Bedroom.) product is mistakenly listed at an incorrect price, $(Make My Foam Products / The Healthy Bedroom.) reserves the right to refuse or cancel any orders placed for product listed at the incorrect price. $(Make My Foam Products / The Healthy Bedroom.) reserves the right to refuse or cancel any such orders whether or not the order has been confirmed and your credit card charged. If your credit card has already been charged for the purchase and your order is cancelled, $(Make My Foam Products / The Healthy Bedroom.) shall issue a credit to your credit card account in the amount of the incorrect price.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Term; Termination</h3>
+                    </div>
+                    <p class="text-center tnc">These terms and conditions are applicable to you upon your accessing the site and/or completing the registration or shopping process. These terms and conditions, or any part of them, may be terminated by $(Make My Foam Products / The Healthy Bedroom.) without notice at any time, for any reason. The provisions relating to Copyrights, Trademark, Disclaimer, Limitation of Liability, Indemnification and Miscellaneous, shall survive any termination.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Notice</h3>
+                    </div>
+                    <p class="text-center tnc">$(Make My Foam Products / The Healthy Bedroom.) may deliver notice to you by means of e-mail, a general notice on the site, or by other reliable method to the address you have provided to $(Make My Foam Products / The Healthy Bedroom.).</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Miscellaneous</h3>
+                    </div>
+                    <p class="text-center tnc">Your use of this site shall be governed in all respects by the laws of the state of California, U.S.A., without regard to choice of law provisions, and not by the 1980 U.N. Convention on contracts for the international sale of goods. You agree that jurisdiction over and venue in any legal proceeding directly or indirectly arising out of or relating to this site (including but not limited to the purchase of $(Make My Foam Products / The Healthy Bedroom.) products) shall be in the state or federal courts located in Los Angeles County, California. Any cause of action or claim you may have with respect to the site (including but not limited to the purchase of $(Make My Foam Products / The Healthy Bedroom.) products) must be commenced within one (1) year after the claim or cause of action arises. $(Make My Foam Products / The Healthy Bedroom.)'s failure to insist upon or enforce strict performance of any provision of these terms and conditions shall not be construed as a waiver of any provision or right. Neither the course of conduct between the parties nor trade practice shall act to modify any of these terms and conditions. $(Make My Foam Products / The Healthy Bedroom.) may assign its rights and duties under this Agreement to any party at any time without notice to you.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Use of Site</h3>
+                    </div>
+                    <p class="text-center tnc">Harassment in any manner or form on the site, including via e-mail, chat, or by use of obscene or abusive language, is strictly forbidden. Impersonation of others, including a $(Make My Foam Products / The Healthy Bedroom.) or other licensed employee, host, or representative, as well as other members or visitors on the site is prohibited. You may not upload to, distribute, or otherwise publish through the site any content which is libelous, defamatory, obscene, threatening, invasive of privacy or publicity rights, abusive, illegal, or otherwise objectionable which may constitute or encourage a criminal offense, violate the rights of any party or which may otherwise give rise to liability or violate any law. You may not upload commercial content on the site or use the site to solicit others to join or become members of any other commercial online service or other organization.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Participation Disclaimer</h3>
+                    </div>
+                    <p class="text-center tnc">$(Make My Foam Products / The Healthy Bedroom.) does not and cannot review all communications and materials posted to or created by users accessing the site, and is not in any manner responsible for the content of these communications and materials. You acknowledge that by providing you with the ability to view and distribute user-generated content on the site, $(Make My Foam Products / The Healthy Bedroom.) is merely acting as a passive conduit for such distribution and is not undertaking any obligation or liability relating to any contents or activities on the site. However, $(Make My Foam Products / The Healthy Bedroom.) reserves the right to block or remove communications or materials that it determines to be (a) abusive, defamatory, or obscene, (b) fraudulent, deceptive, or misleading, (c) in violation of a copyright, trademark or; other intellectual property right of another or (d) offensive or otherwise unacceptable to www.tangerinefoam.com in its sole discretion.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Indemnification</h3>
+                    </div>
+                    <p class="text-center tnc">You agree to indemnify, defend, and hold harmless $(Make My Foam Products / The Healthy Bedroom.), its officers, directors, employees, agents, licensors and suppliers (collectively the "Service Providers") from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, resulting from any violation of these terms and conditions or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing the site using your Internet account.</p>
+                    <hr>
+                    <div class="heading-02">
+                        <h3>Third-Party Links</h3>
+                    </div>
+                    <p class="text-center tnc">In an attempt to provide increased value to our visitors, $(Make My Foam Products / The Healthy Bedroom.) may link to sites operated by third parties. However, even if the third party is affiliated with $(Make My Foam Products / The Healthy Bedroom.), $(Make My Foam Products / The Healthy Bedroom.) has no control over these linked sites, all of which have separate privacy and data collection practices, independent of $(Make My Foam Products / The Healthy Bedroom.). These linked sites are only for your convenience and therefore you access them at your own risk. Nonetheless, $(Make My Foam Products / The Healthy Bedroom.) seeks to protect the integrity of its web site and the links placed upon it and therefore requests any feedback on not only its own site, but for sites it links to as well (including if a specific link does not work).</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="f-custom-col col-01">
+                    <div class="logo-footer">
+                        <a href="index.html" class="footer-brand">
+                            <img src="assets/images/logo.png" />
+                        </a>
+                        <p class="para-2 mt-2 abtus">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <p class="contact-detail">
+                            315 St Germain Ave Toronto ON M5M 1W4(Toronto ,Ontario)
+                        </p>
+                    </div>
+                </div>
+                <div class="f-custom-col col-02">
+                    <h5 class="folloe-us"> By Use</h5>
+                    <div class="row moble-50">
+                        <ul class="col-sm-6  border-right">
+                            <li>
+                                <a class="anchorLink" href="#">RV
+                                </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#x">Guitar</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Bike </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Couch </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Chair </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#">Bar Stool</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#x">Gym Table</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Boat </a>
+                            </li>
+                        </ul>
+                        <ul class="col-sm-6">
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Arab Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Persian Cushions </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-custom-col col-03">
+                    <h5 class="folloe-us">Type Of Foam</h5>
+                    <ul>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self">Polyurethane Foam</a>
+                        </li>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self">Memory Foam </a>
+                        </li>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self"> Latex Dunlop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-custom-col col-04">
+                    <div class="ac-gf-footer-legal">
+                        <div class="social-footer">
+                            <h5 class="folloe-us">Contact Us </h5>
+                            <a href="#" class="contact-detail">
+                                <img src="assets/images/phone.png"> +1 613-979-4537
+                            </a>
+                            <a href="#" class="contact-detail">
+                                <img src="assets/images/email.png"> info@makemyfoam.com
+                            </a>
+                            <div class="social-menu">
+                                <h5 class="folloe-us">Follow Us
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <div class="img-payment">
+                            <img src="assets/images/payment-option.png"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ac-gf-footer-legal-copyright ">
+            <div class="container">
+                <div class="row no-gutters ">
+                    <div class="col-sm-5 text-left">
+                        <p> Copyright © 2018 Make My Foam All rights reserved</p>
+                    </div>
+                    <div class="col-sm-7 text-right links-footer">
+                        <a href="#">
+                            About Us
+                        </a>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                        <a href="#">
+                            Support
+                        </a>
+                        <a href="#">
+                            Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade login-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Login to Make My Foam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="email " class="inputText form-control" required="">
+                                <label class="floating-label"> Email Here </label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="password " class="inputText form-control" required="">
+                                <label class="floating-label">Enter Password</label>
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2">
+
+                            <button type="submit " class="btn btn-01 ml-auto w-100 text-center">Log In</button>
+                        </div>
+
+                        <div class="links-password">
+                            <a href="# " class="para-1-dropdown">Recover Password</a>
+                            <p class="">New to Make My Foam?
+                                <a href="# " class="para-1-dropdown ml-auto">Create Account</a>
+                            </p>
+                        </div>
+
+                        <div class="para-1-dropdown mt-4 text-center">
+                            <span>Or Login Using</span>
+                        </div>
+
+                        <div class="form-group form-inline text-center btn-social my-3">
+                            <a href="#" class="social-btn fb-btn">
+                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#" class="social-btn ml-3 ggle-btn ">
+                                <i class=" fab fa-google "></i> Google</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade login-modal" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sign Up to Make My Foam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="text" class="inputText form-control" required="">
+                                <label class="floating-label">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="number " class="inputText form-control" required="">
+                                <label class="floating-label"> Mobile Number</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="email " class="inputText form-control" required="">
+                                <label class="floating-label"> Email Here </label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="password " class="inputText form-control" required="">
+                                <label class="floating-label">Enter Password</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="text " class="inputText form-control" required="">
+                                <label class="floating-label">Your Adress</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2">
+
+                            <button type="submit " class="btn btn-01 ml-auto w-100 text-center">Continue</button>
+                        </div>
+
+
+                        <div class="links-password">
+                            <p class="">Already have an account?
+                                <a href="# " class="para-1-dropdown ml-auto"> Login!</a>
+                            </p>
+                        </div>
+                        <div class="para-1-dropdown mt-4 text-center">
+                            <span>Or Continue Using</span>
+                        </div>
+
+                        <div class="form-group form-inline text-center btn-social my-3">
+                            <a href="#" class="social-btn fb-btn">
+                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#" class="social-btn ml-3 ggle-btn ">
+                                <i class=" fab fa-google "></i> Google</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/3.1.1.jquery.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".list-icn").click(function () {
+
+                $(".grid-view").toggleClass("list-full").css({ "flex": "100%", "max-width": "100%" });
+            });
+            $(".grid-icn").click(function () {
+
+                $(".grid-view").removeClass("list-full").css({ "flex": "33.33%%", "max-width": "33.33%" });
+            });
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+
+
+    </script>
+
+    <script src="assets/js/3.1.1.jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select:not(.ignore)').niceSelect();
+            FastClick.attach(document.body);
+        });    
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64633646-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

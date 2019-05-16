@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make My Foam</title>
+    <link href="assets/css/nice-select.css" rel="stylesheet" >
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link href="assets/images/favicon.ico" rel="shortcut icon"  type="image/x-icon">
+    
+</head>
+
+<body class="inner-page">
+
+    <!-- HEADER START -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-all fixed-top-head header-innerpage">
+            <a class="navbar-brand" href="index.html">
+
+                <img src="assets/images/logo.png" class="image" alt="logo">
+
+            </a>
+            <div class="ml-auto button-action ml-auto dropdown">
+                <!-- <button class="btn-01 btn">Log In
+                    <i class="fas fa-user"></i>
+                </button> -->
+
+                <button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <i class="far fa-user"></i>Your Account</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-shopping-bag"></i>Your Orders </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-heart"></i>Shortlist</a>
+                    <!-- <span class="para-1-dropdown">If you are new user</span> -->
+                    <div class="btn-inline d-flex flex-column">
+                        <button class="   btn-link" data-toggle="modal" data-target="#exampleModalCenter1">Register </button>
+                        <button class="btn-01 btn dropdown-login" data-toggle="modal" data-target="#exampleModalCenter">Log In</button>
+                    </div>
+                </div>
+            </div>
+            <a href="cart.html" class="cart-mobile">
+                <span class="item-count">2</span>
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <button onclick="openNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/images/bars.png">
+            </button>
+
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <!--<section class="banner inner-banner">
+    </section>-->
+
+    <section class="search-form bg-ornge">
+        <div class="container">
+            <div class="search-form-inner">
+                <form>
+                    <div class="row mb-3 search-three-column">
+                        <div class="col-4">
+                            <div class="form-group p-0 chips-input">
+                                <div class="input-div">
+                                    <input type="text" class="inputText w-100" data-role="tagsinput" value="Wool" autofocus>
+                                    <label class="floating-label fl">Cover</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group p-0 chips-input">
+                                <div class="input-div">
+                                    <input type="text" class="inputText w-100" data-role="tagsinput" value="Afghani Cushions">
+                                    <label class="floating-label fl">Feature</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group p-0 chips-input">
+                                <div class="input-div">
+                                    <input type="text" class="inputText w-100" data-role="tagsinput" value="Test">
+                                    <label class="floating-label fl">Delivery</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row search-four-column">
+                        <div class="col-3">
+                            <div class="form-group chips-input drop-down-input d-flex align-items-center">
+                                <div class="input-div">
+                                    <input type="text" class="inputText slisth" required="">
+                                    <label class="floating-label">Width</label>
+                                </div>
+                                <select class="form-control" id="exampleFormControlSelect1" style="display: none;">
+                                    <option>in</option>
+                                    <option>cm </option>
+                                    <option>mm </option>
+                                    <option>ft </option>
+                                    <option>m</option>
+                                </select>
+                                <div class="nice-select form-control z-999" tabindex="0">
+                                    <span class="current">mm</span>
+                                    <ul class="list">
+                                        <li data-value="mm" class="option selected">mm</li>
+                                        <li data-value="cm" class="option">cm </li>
+                                        <li data-value="ich" class="option">in </li>
+                                        <li data-value="ft" class="option">ft </li>
+                                        <li data-value="mtr" class="option">m</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group chips-input drop-down-input d-flex align-items-center">
+                                <div class="input-div">
+                                    <input type="text" class="inputText slisth" required="">
+                                    <label class="floating-label">Length</label>
+                                </div>
+                                <select class="form-control" id="exampleFormControlSelect1" style="display: none;">
+                                    <option>mm</option>
+                                    <option>cm </option>
+                                    <option>in </option>
+                                    <option>ft </option>
+                                    <option>m</option>
+                                </select>
+                                <div class="nice-select form-control" tabindex="0">
+                                    <span class="current">mm</span>
+                                    <ul class="list">
+                                        <li data-value="mm" class="option selected">mm</li>
+                                        <li data-value="cm" class="option">cm </li>
+                                        <li data-value="ich" class="option">in </li>
+                                        <li data-value="ft" class="option">ft </li>
+                                        <li data-value="mtr" class="option">m</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group chips-input drop-down-input d-flex align-items-center">
+                                <div class="input-div">
+                                    <input type="text" class="inputText slisth" required="">
+                                    <label class="floating-label">Depth</label>
+                                </div>
+                                <select class="form-control z-99" id="exampleFormControlSelect1" style="display: none;">
+                                    <option>in</option>
+                                    <option>cm </option>
+                                    <option> mm</option>
+                                    <option>ft </option>
+                                    <option>m</option>
+                                </select>
+                                <div class="nice-select form-control" tabindex="0">
+                                    <span class="current">m</span>
+                                    <ul class="list">
+                                        <li data-value="mm" class="option selected">m</li>
+                                        <li data-value="cm" class="option">cm </li>
+                                        <li data-value="ich" class="option">in </li>
+                                        <li data-value="ft" class="option">ft </li>
+                                        <li data-value="mtr" class="option">mm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group large-menu px-0">
+                                <div class="dropdown-main">
+                                    <a href="javascript:void(0)">Show Option</a>
+                                    <div class="dropdown-menu-option">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h4> Cover</h4>
+                                                <div class="checkbx-wrap">
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" name="options" id="" autocomplete="">Polyster
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" name="options" id="" autocomplete="">Wool
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" name="options" id="" autocomplete="">Viny
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" checked name="options" id="" autocomplete="">Cotton
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" checked name="options" id="" autocomplete="">Cotton
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" checked name="options" id="" autocomplete="">Cotton
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" checked name="options" id="" autocomplete="">Cotton
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h4> Dacron Wrap / Fill</h4>
+                                                <div class="checkbx-wrap">
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" name="options" id="" autocomplete="">Wool-Cotton-Silk-Blend
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" checked name="options" id="" autocomplete="">Silk
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-group ">
+                                                        <label class=" custom-check">
+                                                            <input type="checkbox" name="options" id="" autocomplete="">Cotton
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h4> Selected items</h4>
+                                                <div class="checkbx-wrap d-flex selected-items">
+                                                    <div class=" selected-item-img">
+                                                        <div class="object-cover">
+                                                            <img src="assets/images/selected.jpg" class="mw-100">
+                                                        </div>
+                                                        <div class="selected-item-name">Cotton</div>
+                                                    </div>
+                                                    <div class="selected-item-img">
+                                                        <div class="object-cover">
+                                                            <img src="assets/images/selected.jpg" class="mw-100"> </div>
+                                                        <div class="selected-item-name">Silk</div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h4>Delivery</h4>
+                                                <!-- <div class="form-group delivery p-0 row">
+                                                            <select class="form-control " id="">
+                                                                <option>Select delivery</option>
+                                                                <option>Home</option>
+                                                                <option>Office</option>
+                                                                <option>abc</option>
+                                                                <option>abc</option>
+                                                            </select>
+                                                        </div> -->
+                                                <div class="form-group fix-width delivery  p-0">
+                                                    <input type="text" placeholder=" M3C 0C1 " onfocus="this.placeholder = ''" onblur="this.placeholder = 'M3C 0C1'" />
+                                                    <a href="#" class="chake-locat"> Check</a>
+                                                    <!-- <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option></option>
+                                                                <option> </option>
+                                                                <option> </option>
+                                                                <option> </option>
+                                                                <option> </option>
+                                                            </select> -->
+                                                </div>
+                                                <div class="pick-up">
+                                                    Delivery by 18 Dec, Tuesday
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="search-wraper bg-gray">
+        <div class="custom-breadcrb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-orange">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a href="persian-cushions.html" class="text-orange">Persian Cushions</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="search-result-column">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-9 ord1-mobile">
+                        <div class="top-panel d-flex align-items-center" id="filterMain">
+                            
+                            <div class="short-by d-flex align-items-center justify-content-between w-100">
+
+                                <button id="btn-filter" class="form-control button-filter d-flex align-items-center justify-content-between">
+                                    <span>Filter</span> 
+                                    <i class="fa fa-filter"></i>
+                                </button>
+                                
+                                <div class="form-group h-40 d-flex align-items-center pr-0">
+                                    <span class="sorbyLabel">Sort By</span>
+                                    <select class="form-control z-99" id="exampleFormControlSelect1">
+                                        <option>Popular</option>
+                                        <option>Price High To Low</option>
+                                        <option>Price Low To High</option>
+                                        <option>Newest First</option>
+                                    </select>
+                                </div>
+                                <span class="text-gray font-14">Showing 1-8 out of 1000 items</span>
+                            </div>
+                           
+                            <!-- filter options start -->
+                            <div class="dropdown-menu-option">
+                                <div class="row justify-content-between">
+                                    <div class="col-filter-1">
+                                        <h4>By Size</h4>
+                                        <div class="checkbx-wrap customScrollBar">
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">Single
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">Single Xl
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">Double
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" checked name="options" id="" autocomplete="">Double XL
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" checked name="options" id="" autocomplete="">Queen
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" checked name="options" id="" autocomplete="">King
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                           
+                                        </div>
+                            
+                            
+                            
+                                    </div>
+                                    <div class="col-filter-2">
+                                        <h4>By Use</h4>
+                                        <div class="checkbx-wrap d-flex customScrollBar">
+                                            <section>
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" name="options" id="" autocomplete="">RV
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" name="options" id="" autocomplete="">Guitar
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" name="options" id="" autocomplete="">MotorCycle
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" checked name="options" id="" autocomplete="">Couch
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" checked name="options" id="" autocomplete="">Chair
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" checked name="options" id="" autocomplete="">Bar Stool
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <section class="ml-5">
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" name="options" id="" autocomplete="">RV
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" name="options" id="" autocomplete="">Guitar
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" name="options" id="" autocomplete="">MotorCycle
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" checked name="options" id="" autocomplete="">Couch
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" checked name="options" id="" autocomplete="">Chair
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group ">
+                                                    <label class=" custom-check">
+                                                        <input type="checkbox" checked name="options" id="" autocomplete="">Bar Stool
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </section>
+                                    
+                                        </div>
+                                    
+                                    
+                                    
+                                    </div>
+                                    <div class="col-filter-3">
+                                        <h4>Foam Type</h4>
+                                        <div class="checkbx-wrap customScrollBar">
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">polyurethane
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">Memory
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">Latex
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    
+                                    
+                                    </div>
+                                    <div class="col-filter-4">
+                                        <h4>Discount</h4>
+                                        <div class="checkbx-wrap customScrollBar">
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">Less than 10%
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                    
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">10% or more
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                    
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">20% or more
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">30% or more
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                    
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">40% or more
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                    
+                                            <div class="form-group ">
+                                                <label class=" custom-check">
+                                                    <input type="checkbox" name="options" id="" autocomplete="">50% or more
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            
+                                    
+                                        </div>
+                                    
+                                    
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- filter options start -->
+                        </div>
+                        <div class="row test">
+                            <div class="col-sm-6 col-lg-4 mb-30 grid-view">
+                                <div class="item-box">
+                                    <div class="item-img item-img-persian">
+                                     <img src="assets/images/big-icon/persian-cushion.png" alt="persian-cushion" />
+                                     <img src="assets/images/big-icon/persian-cushion-with-cover.png" class="d-none" alt="persian-cushion-with-cover" />
+                                        <!-- when hover on second bullet, please toggle "d-none" class ^ on above img element -->
+                                    </div>
+                                    <div class="bullets d-flex justify-content-center">
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion"></a>
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion with cover"></a>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="title-section">
+                                            <h3 class="item-name para-1">Persian Cushion</h3>
+                                            <p class="item-configr">22°W x 45° L x 3° D</p>
+                                        </div>
+                                        <div class="main-description">
+                                            <h3 class="para-1">High density Extra-firm </h3>
+                                            <p>Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxadd-cart d-flex align-items-center">
+                                        <h3 class="price"> $59</h3>
+                                        <button class="btn btn-01">add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-30 grid-view">
+                                <div class="item-box">
+                                    <div class="item-img item-img-persian">
+                                     <img src="assets/images/big-icon/persian-cushion.png" alt="persian-cushion" />
+                                     <img src="assets/images/big-icon/persian-cushion-with-cover.png" class="d-none" alt="persian-cushion-with-cover" />
+                                        <!-- when hover on second bullet, please toggle "d-none" class ^ on above img element -->
+                                    </div>
+                                    <div class="bullets d-flex justify-content-center">
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion"></a>
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion with cover"></a>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="title-section">
+                                            <h3 class="item-name para-1">Persian Cushion</h3>
+                                            <p class="item-configr">22°W x 45° L x 3° D</p>
+                                        </div>
+                                        <div class="main-description">
+                                            <h3 class="para-1">High density Extra-firm </h3>
+                                            <p>Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxadd-cart d-flex align-items-center">
+                                        <h3 class="price"> $59</h3>
+                                        <button class="btn btn-01">add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-30 grid-view">
+                                <div class="item-box">
+                                    <div class="item-img item-img-persian">
+                                     <img src="assets/images/big-icon/persian-cushion.png" alt="persian-cushion" />
+                                     <img src="assets/images/big-icon/persian-cushion-with-cover.png" class="d-none" alt="persian-cushion-with-cover" />
+                                        <!-- when hover on second bullet, please toggle "d-none" class ^ on above img element -->
+                                    </div>
+                                    <div class="bullets d-flex justify-content-center">
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion"></a>
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion with cover"></a>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="title-section">
+                                            <h3 class="item-name para-1">Persian Cushion</h3>
+                                            <p class="item-configr">22°W x 45° L x 3° D</p>
+                                        </div>
+                                        <div class="main-description">
+                                            <h3 class="para-1">High density Extra-firm </h3>
+                                            <p>Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxadd-cart d-flex align-items-center">
+                                        <h3 class="price"> $59</h3>
+                                        <button class="btn btn-01">add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-30 grid-view">
+                                <div class="item-box">
+                                    <div class="item-img item-img-persian">
+                                     <img src="assets/images/big-icon/persian-cushion.png" alt="persian-cushion" />
+                                     <img src="assets/images/big-icon/persian-cushion-with-cover.png" class="d-none" alt="persian-cushion-with-cover" />
+                                        <!-- when hover on second bullet, please toggle "d-none" class ^ on above img element -->
+                                    </div>
+                                    <div class="bullets d-flex justify-content-center">
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion"></a>
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion with cover"></a>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="title-section">
+                                            <h3 class="item-name para-1">Persian Cushion</h3>
+                                            <p class="item-configr">22°W x 45° L x 3° D</p>
+                                        </div>
+                                        <div class="main-description">
+                                            <h3 class="para-1">High density Extra-firm </h3>
+                                            <p>Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxadd-cart d-flex align-items-center">
+                                        <h3 class="price"> $59</h3>
+                                        <button class="btn btn-01">add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-30 grid-view">
+                                <div class="item-box">
+                                    <div class="item-img item-img-persian">
+                                     <img src="assets/images/big-icon/persian-cushion.png" alt="persian-cushion" />
+                                     <img src="assets/images/big-icon/persian-cushion-with-cover.png" class="d-none" alt="persian-cushion-with-cover" />
+                                        <!-- when hover on second bullet, please toggle "d-none" class ^ on above img element -->
+                                    </div>
+                                    <div class="bullets d-flex justify-content-center">
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion"></a>
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion with cover"></a>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="title-section">
+                                            <h3 class="item-name para-1">Persian Cushion</h3>
+                                            <p class="item-configr">22°W x 45° L x 3° D</p>
+                                        </div>
+                                        <div class="main-description">
+                                            <h3 class="para-1">High density Extra-firm </h3>
+                                            <p>Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxadd-cart d-flex align-items-center">
+                                        <h3 class="price"> $59</h3>
+                                        <button class="btn btn-01">add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-30 grid-view">
+                                <div class="item-box">
+                                    <div class="item-img item-img-persian">
+                                     <img src="assets/images/big-icon/persian-cushion.png" alt="persian-cushion" />
+                                     <img src="assets/images/big-icon/persian-cushion-with-cover.png" class="d-none" alt="persian-cushion-with-cover" />
+                                        <!-- when hover on second bullet, please toggle "d-none" class ^ on above img element -->
+                                    </div>
+                                    <div class="bullets d-flex justify-content-center">
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion"></a>
+                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Persian cushion with cover"></a>
+                                    </div>
+                                    <div class="item-description">
+                                        <div class="title-section">
+                                            <h3 class="item-name para-1">Persian Cushion</h3>
+                                            <p class="item-configr">22°W x 45° L x 3° D</p>
+                                        </div>
+                                        <div class="main-description">
+                                            <h3 class="para-1">High density Extra-firm </h3>
+                                            <p>Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="boxadd-cart d-flex align-items-center">
+                                        <h3 class="price"> $59</h3>
+                                        <button class="btn btn-01">add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                           
+                        </div>
+                        <div class="pagination-section">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">
+                                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="chekc-out-box checkoutbox-list-pages">
+                            <div class="cover-total title-section d-flex">
+                                <h3>Covers</h3>
+                                <h3 class="ml-auto">$118</h3>
+                            </div>
+                            <div class="mt-3 mb-4">
+                                <a href="checkout.html" class="btn btn-01 w-100">Checkout</a>
+                            </div>
+                            <hr>
+                            <div class="addedItemsScroller customScrollBar">
+                                <div class="item-added">
+                                    <div class="p-15 d-flex">
+
+                                        <h3 class="font-12 position-relative">
+                                            <span class="item-number">1</span>Arab Cushions</h3>
+                                        <div class="ml-auto">
+                                            <form method="post" action="">
+                                                <div class="input-group plus-minus-input">
+                                                    <input class="input-group-field" type="number" name="quantity" value="2">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="p-15">
+                                        <ul class="list-01">
+                                            <li> - High Density </li>
+                                            <li> - Extra Firm </li>
+                                            <li> - Wool </li>
+                                            <li> - Silk </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item-added">
+                                    <div class="p-15 d-flex">
+
+                                        <h3 class="font-12 position-relative">
+                                            <span class="item-number">2</span>Afghani Cushions</h3>
+                                        <div class="ml-auto">
+                                            <form method="post" action="">
+                                                <div class="input-group plus-minus-input">
+                                                    <input class="input-group-field" type="number" name="quantity" value="2">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="p-15">
+                                        <ul class="list-01">
+                                            <li> - High Density </li>
+                                            <li> - Extra Firm </li>
+                                            <li> - Wool </li>
+                                            <li> - Silk </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="item-added">
+                                    <div class="p-15 d-flex">
+
+                                        <h3 class="font-12 position-relative">
+                                            <span class="item-number">3</span>Afghani Cushions</h3>
+                                        <div class="ml-auto">
+                                            <form method="post" action="">
+                                                <div class="input-group plus-minus-input">
+                                                    <input class="input-group-field" type="number" name="quantity" value="2">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="p-15">
+                                        <ul class="list-01">
+                                            <li> - High Density </li>
+                                            <li> - Extra Firm </li>
+                                            <li> - Wool </li>
+                                            <li> - Silk </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="cover-total title-section ">
+                                <h3 class="font-16 mb-2">Deliver to</h3>
+                                <div class="form-group fix-width delivery clr-after  p-0 pb-2">
+                                    <input class="pt-0" type="text" value=" M3C 0C1 " onfocus="this.placeholder = ''" onblur="this.placeholder = 'M3C 0C1'">
+                                    <a href="#" class="chake-locat text-orange"> Change</a>
+                                </div>
+                            </div>
+                            <div class="cover-total subtotal  d-flex">
+                                <h3>Subtotal</h3>
+                                <h3 class="ml-auto">$40</h3>
+                            </div>
+                            <div class="cover-total subtotal  d-flex">
+                                <h3>+5% GST</h3>
+                                <h3 class="ml-auto">$9</h3>
+                            </div>
+                            <div class="cover-total subtotal  d-flex">
+                                <h3>+7% GST</h3>
+                                <h3 class="ml-auto">$10</h3>
+                            </div>
+                            <hr>
+                            <div class="cover-total total d-flex align-items-center justify-content-between total mb-0 pb-0">
+                                <h5 class="mb-0">Total</h5>
+                                <h2 class="mb-0">$118</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="f-custom-col col-01">
+                    <div class="logo-footer">
+                        <a href="index.html" class="footer-brand">
+                            <img src="assets/images/logo.png" />
+                        </a>
+                        <p class="para-2 mt-2 abtus">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <p class="contact-detail">
+                            315 St Germain Ave Toronto ON M5M 1W4(Toronto ,Ontario)
+                        </p>
+                    </div>
+                </div>
+                <div class="f-custom-col col-02">
+                    <h5 class="folloe-us"> By Use</h5>
+                    <div class="row moble-50">
+                        <ul class="col-sm-6  border-right">
+                            <li>
+                                <a class="anchorLink" href="#">Afghani Cushions
+                                </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#x">Guitar</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Bike </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#">Afghani Cushions</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#x">Afghani Cushions</a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                        </ul>
+                        <ul class="col-sm-6">
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Arab Cushions </a>
+                            </li>
+                            <li>
+                                <a class="anchorLink" href="#" target="_self">Afghani Cushions </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-custom-col col-03">
+                    <h5 class="folloe-us">Type Of Foam</h5>
+                    <ul>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self">Polyurethane Foam</a>
+                        </li>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self">Memory Foam </a>
+                        </li>
+                        <li>
+                            <a class="anchorLink" href="#" target="_self"> Latex Dunlop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-custom-col col-04">
+                    <div class="ac-gf-footer-legal">
+                        <div class="social-footer">
+                            <h5 class="folloe-us">Contact Us </h5>
+                            <a href="#" class="contact-detail">
+                                <img src="assets/images/phone.png"> +1 613-979-4537
+                            </a>
+                            <a href="#" class="contact-detail">
+                                <img src="assets/images/email.png"> info@makemyfoam.com
+                            </a>
+                            <div class="social-menu">
+                                <h5 class="folloe-us">Follow Us
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <div class="img-payment">
+                            <img src="assets/images/payment-option.png"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ac-gf-footer-legal-copyright ">
+            <div class="container">
+                <div class="row no-gutters ">
+                    <div class="col-sm-5 text-left">
+                        <p> Copyright © 2018 Make My Foam All rights reseAfghani Cushionsed</p>
+                    </div>
+                    <div class="col-sm-7 text-right links-footer">
+                        <a href="#">
+                            About Us
+                        </a>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                        <a href="#">
+                            Support
+                        </a>
+                        <a href="#">
+                            Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Login Modal -->
+    <div class="modal fade login-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Login to Make My Foam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="email " class="inputText form-control" required="">
+                                <label class="floating-label"> Email Here </label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="password " class="inputText form-control" required="">
+                                <label class="floating-label">Enter Password</label>
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2">
+
+                            <button type="submit " class="btn btn-01 ml-auto w-100 text-center">Log In</button>
+                        </div>
+
+                        <div class="links-password">
+                            <a href="# " class="para-1-dropdown">Recover Password</a>
+                            <p class="">New to Make My Foam?
+                                <a href="# " class="para-1-dropdown ml-auto">Create Account</a>
+                            </p>
+                        </div>
+
+                        <div class="para-1-dropdown mt-4 text-center">
+                            <span>Or Login Using</span>
+                        </div>
+
+                        <div class="form-group form-inline text-center btn-social my-3">
+                            <a href="#" class="social-btn fb-btn">
+                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#" class="social-btn ml-3 ggle-btn ">
+                                <i class=" fab fa-google "></i> Google</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade login-modal" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sign Up to Make My Foam</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="text" class="inputText form-control" required="">
+                                <label class="floating-label">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="number " class="inputText form-control" required="">
+                                <label class="floating-label"> Mobile Number</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="email " class="inputText form-control" required="">
+                                <label class="floating-label"> Email Here </label>
+                            </div>
+                        </div>
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="password " class="inputText form-control" required="">
+                                <label class="floating-label">Enter Password</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group chips-input ">
+                            <div class="input-div">
+                                <input type="text " class="inputText form-control" required="">
+                                <label class="floating-label">Your Adress</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2">
+
+                            <button type="submit " class="btn btn-01 ml-auto w-100 text-center">Continue</button>
+                        </div>
+
+
+                        <div class="links-password">
+                            <p class="">Already have an account?
+                                <a href="# " class="para-1-dropdown ml-auto"> Login!</a>
+                            </p>
+                        </div>
+                        <div class="para-1-dropdown mt-4 text-center">
+                            <span>Or Continue Using</span>
+                        </div>
+
+                        <div class="form-group form-inline text-center btn-social my-3">
+                            <a href="#" class="social-btn fb-btn">
+                                <i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a href="#" class="social-btn ml-3 ggle-btn ">
+                                <i class=" fab fa-google "></i> Google</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/3.1.1.jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".list-icn").click(function () {
+
+                $(".grid-view").toggleClass("list-full").css({ "flex": "100%", "max-width": "100%" });
+            });
+            $(".grid-icn").click(function () {
+
+                $(".grid-view").removeClass("list-full").css({ "flex": "33.33%%", "max-width": "33.33%" });
+            });
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+
+        
+
+    </script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select:not(.ignore)').niceSelect();
+            FastClick.attach(document.body);
+        });    
+
+        
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64633646-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

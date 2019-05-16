@@ -1,0 +1,32 @@
+@import url('bootstrap.min.css');
+@import url('owl.carousel.min.css');
+@import url('owl.theme.default.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Roboto:300,400,500,700,900');
+@import url('../fonts/fontawesome/css/all.css'); 
+@import url('style.css');
+@import url('responsive.css');
+@import url('bootstrap-select.min.css');
+@import url('bootstrap-tagsinput.css');
+ul,
+li,
+a {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-roboto{font-family: 'Roboto', sans-serif;}
+.font-montser{font-family: 'Montserrat', sans-serif;}

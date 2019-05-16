@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make My Foam</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/accordion.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="profile_box">
+            <a href="Dashboard.html">
+                <img src="images/login_logo.png" class="img-responsive" /></a>
+        </div>
+        <ul class="sidenav_menu_list">
+            <li><a class="search_menu" href="Dashboard.html">Search <i class="fa fa-search"></i></a></li>
+            <li><a href="UploadFile.html">Upload file(s)</a></li>
+            <li><a href="Tags.html">Tags</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="Blog.html">Blogpage</a></li>
+            <li><a href="Brands.html">Brands</a></li>
+            <li><a href="PriceList.html" target="_blank">Price list</a></li>
+            <li><a href="#">Glossary</a></li>
+            <li><a href="#">Contacts</a></li>
+             <!--<li><a href="#">Tasksheet</a></li>-->
+            <li class="dropdown">
+                <a class="dropdown-toggle" id="dropdown1" data-toggle="dropdown" href="#">Clients <span class="menu_caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                    <li><a href="#">Retail </a></li>
+                    <li><a href="#">Commercial</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Chart of Products</a></li>
+            <li><a href="ChangePassword.html">Change Password</a></li>
+            <li><a href="login.html">Log out</a></li>
+        </ul>
+
+    </div>
+
+    <div onclick="openNav()" class="menu_Icon">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
+    <div onclick="closeNav()">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-7">
+                        <div class="logo">
+                            <a href="Dashboard.html">
+                                <img src="images/logo.png" class="img-responsive" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-7 col-xs-12 padding_right_zero">
+                        <div class="searchBar">
+                            <input class="form-control" placeholder="Search..." />
+                            <a href="AfterSearch.html">
+                                <button><i class="fa fa-search"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 padding_left_zero">
+                        <div class="filter_bar dropdown">
+                            <div class="filter_btn dropdown-toggle xs_hidden" onclick="return showHideForm('hiddenForm');">
+                                <i class="fa fa-filter"></i>Filter
+                            </div>
+
+                            <!--Sidenav start-->
+                            <div class="filter_btn dropdown-toggle mobile_view" onclick="openfltNav()">
+                                <i class="fa fa-filter"></i>Filter
+                            </div>
+                            <div id="filternav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn mobile_view" onclick="closefltNav()">&times;</a>
+                                <div id="hiddenForm" style="display: none;" class="filter_div">
+                                    <ul class="filter_dropdown">
+                                        <li>
+                                            <h4>Brands</h4>
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox">
+                                                        Hypnos
+                                                <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Sprout
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Sova
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        ZenGreen
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>File Type</h4>
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        PDF
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        PPT
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Word
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Excel
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Image
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Other
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        Video
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>Client</h4>
+                                            <ul class="filter_client_searchbar">
+                                                <li>
+                                                    <div class="search_bar2">
+                                                        <input class="form-control" placeholder="Search Client..." />
+                                                        <button type="button"><i class="fa fa-search"></i></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <h4>Staff</h4>
+                                            <ul class="filter_client_searchbar">
+                                                <li>
+                                                    <div class="search_bar2">
+                                                        <input class="form-control" placeholder="Search Staff..." />
+                                                        <button type="button"><i class="fa fa-search"></i></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            <h4>Region</h4>
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        BC
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        AB
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        NS
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        SK
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        NB
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox_box">
+                                                        <input type="checkbox" />
+                                                        PEI
+                                                    <span class="checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <div class="filter_search_btn">
+                                        <a href="AfterSearch.html">Search <i class="fa fa-search"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Sidenav end-->
+                            <script type="text/javascript">
+                                function showHideForm(formid) {
+                                    var _form = document.getElementById(formid);
+                                    _form.style.display = (_form.style.display != "block") ? "block" : "none";
+                                    return false;
+                                }
+                            </script>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-7"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="container" class="page_content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-2 padding_zero">
+                        <div class="left_bookmark_bar">
+
+                            <!---->
+
+                            <ul class="main-nav bookmark-nav">
+                                <li>
+                                    <h3 class="heading"><a href="QuickLinks.html">Quick Links</a></h3>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-arrow"><span class="menu-caret"></span>Retailers</a>
+                                    <ul>
+                                        <li><a class="has-arrow" href="#"><span class="menu-caret"></span>Existing retailers</a>
+                                            <ul>
+                                                <li><a href="#">Search by brand</a></li>
+                                                <li><a href="#">Search by sales rep</a></li>
+                                                <li><a href="PriceList.html" target="_blank">Price list</a></li>
+                                                <li><a href="#">POP</a></li>
+                                                <li><a href="#">Dealer programs</a></li>
+                                                <li><a href="#">Campaigns</a></li>
+                                                <li><a href="#">Email newsletter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="has-arrow" href="#"><span class="menu-caret"></span>New retailers</a>
+                                            <ul>
+                                                <li><a href="#">Introducing Araam</a></li>
+                                                <li><a href="#">Our brands</a></li>
+                                                <li><a href="#">Terms of business</a></li>
+                                                <li><a href="#">POP offerings</a></li>
+                                                <li><a href="#">Dealer programs</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="has-arrow"><span class="menu-caret"></span>Commercial</a>
+                                    <ul>
+                                        <li><a class="has-arrow" href="#"><span class="menu-caret"></span>Existing clients</a>
+                                            <ul>
+                                                <li><a href="#">Search by brand</a></li>
+                                                <li><a href="#">Search by sales rep</a></li>
+                                                <li><a href="PriceList.html" target="_blank">Price list</a></li>
+                                                <li><a href="#">POP</a></li>
+                                                <li><a href="#">Dealer programs</a></li>
+                                                <li><a href="#">Campaigns</a></li>
+                                                <li><a href="#">Email newsletter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="has-arrow" href="#"><span class="menu-caret"></span>New clients</a>
+                                            <ul>
+                                                <li><a href="#">Introducing Araam</a></li>
+                                                <li><a href="#">Our brands</a></li>
+                                                <li><a href="#">Terms of business</a></li>
+                                                <li><a href="#">POP offerings</a></li>
+                                                <li><a href="#">Dealer programs</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Forms</a></li>
+                                <li>
+                                    <a href="#" class="has-arrow"><span class="menu-caret"></span>Brands</a>
+                                    <ul>
+                                        <li>
+                                            <a class="has-arrow" href="#"><span class="menu-caret"></span>Hypnos</a>
+                                            <ul>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Sovereign</a>
+                                                    <ul>
+                                                        <li><a href="#">Viceroy</a></li>
+                                                        <li><a href="#">Sandringham</a></li>
+                                                        <li><a href="#">St. James</a></li>
+                                                        <li><a href="#">Hampton</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Royal</a>
+                                                    <ul>
+                                                        <li><a href="#">Eminence LNT</a></li>
+                                                        <li><a href="#">Eminence</a></li>
+                                                        <li><a href="#">Empress</a></li>
+                                                        <li><a href="#">Wendover</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Castle</a>
+                                                    <ul>
+                                                        <li><a href="#">Helmsley</a></li>
+                                                        <li><a href="#">Carlisle</a></li>
+                                                        <li><a href="#">Sherbourne</a></li>
+                                                        <li><a href="#">Regent</a></li>
+                                                        <li><a href="#">Clarence</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="has-arrow" href="#"><span class="menu-caret"></span>Sprout</a>
+                                            <ul>
+                                                <li><a href="#">Luxuria</a></li>
+                                                <li><a href="#">Vivo</a></li>
+                                                <li><a href="#">Mollis</a></li>
+                                                <li><a href="#">Somnus</a></li>
+                                                <li><a href="#">Durus</a></li>
+                                                <li><a href="#">Firmus</a></li>
+                                                <li><a href="#">Virtue</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="has-arrow" href="#"><span class="menu-caret"></span>ZenGreen</a>
+                                            <ul>
+                                                <li><a href="#">Tranquility</a></li>
+                                                <li><a href="#">Serenity</a></li>
+                                                <li><a href="#">Harmony</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="has-arrow" href="#"><span class="menu-caret"></span>Sova</a>
+                                            <ul>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Gel</a>
+                                                    <ul>
+                                                        <li><a href="#">Sea</a></li>
+                                                        <li><a href="#">Flame</a></li>
+                                                        <li><a href="#">River</a></li>
+                                                        <li><a href="#">Ocean</a></li>
+                                                        <li><a href="#">Sky</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Green</a>
+                                                    <ul>
+                                                        <li><a href="#">Floridus</a></li>
+                                                        <li><a href="#">Sylvatica</a></li>
+                                                        <li><a href="#">Japonica</a></li>
+                                                        <li><a href="#">Canadensis</a></li>
+                                                        <li><a href="#">Alba</a></li>
+                                                        <li><a href="#">Grandiflora</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Inline</a>
+                                                    <ul>
+                                                        <li><a href="#">Araam Promo</a></li>
+                                                        <li><a href="#">Equinox</a></li>
+                                                        <li><a href="#">Night Sky</a></li>
+                                                        <li><a href="#">Indulgence</a></li>
+                                                        <li><a href="#">Soothing Rest</a></li>
+                                                        <li><a href="#">Nebula</a></li>
+                                                        <li><a href="#">Dreamer</a></li>
+                                                        <li><a href="#">Eden</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="has-arrow" href="#"><span class="menu-caret"></span>Spring Blowout Special</a>
+                                                    <ul>
+                                                        <li><a href="#">Almoha</a></li>
+                                                        <li><a href="#">Monarch</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Araam(General)</a></li>
+                                <li>
+                                    <h3 class="heading">Favorites</h3>
+                                </li>
+                                <li><a href="PriceList.html" target="_blank">Price list</a></li>
+                                <li><a href="#">Our brands</a></li>
+                            </ul>
+                            <!---->
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-7">
+
+                        <div class="dashboard_section">
+                            <div class="dashboard_text">
+                                <h2>Welcome, Haris</h2>
+                            </div>
+
+                            <div class="recent_activity_section">
+
+                                <div class="activity_header">
+                                    <div class="col-xs-7">
+                                        <h3 class="heading">Recent Activities</h3>
+                                    </div>
+                                    <div class="col-xs-5">
+                                        
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div id="htmlComment" class="recent_grid">
+                                    <div class="activity_subline"><b>Gaurav</b> uploaded <b>Spring Blowout Special</b> <strong>Sova Newsletter</strong> in <b>HTML</b></div>
+                                    <div class="time">04 Apr 2018 / <span>4hrs</span></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                                    <div class="activity_timeline">
+                                        <ul>
+
+                                            <li>
+                                                <button type="button" class="tooltip2">
+                                                    Comment (2)
+                                                <span class="tooltiptext2">
+                                                    <ul>
+                                                        <li>Haris</li>
+                                                        <li>Gaurav</li>
+                                                    </ul>
+                                                </span>
+                                                </button>
+                                            </li>
+                                            <li>Shared with Haris, Gaurav and
+                                            <button type="button" class="tooltip2">
+                                                4 others
+                                                <span class="tooltiptext2">
+                                                    <ul>
+                                                        <li>Nikhil</li>
+                                                        <li>Ram</li>
+                                                        <li>Katrina</li>
+                                                        <li>Tony</li>
+                                                    </ul>
+                                                </span>
+                                            </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment_box">
+                                        <div class="comment_list">
+                                            <p><b>Gaurav</b> sed do eiusmod tempor</p>
+                                            <ul>
+
+                                                <li>
+                                                    <button type="button">Reply (1)</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="comment_list">
+                                            <p><b>Haris</b> sed do eiusmod tempor</p>
+                                            <ul>
+
+                                                <li>
+                                                    <button type="button">Reply (1)</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="comment_field">
+                                            <input class="form-control" placeholder="Write a comment..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="pdfcomt" class="recent_grid">
+                                    <div class="activity_subline"><b>Gaurav</b> uploaded <b>Spring Blowout Special</b> <strong>Sova Newsletter</strong> in <b>PDF</b></div>
+                                    <div class="time">04 Apr 2018 / <span>4hrs</span></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                                    <div class="activity_timeline">
+                                        <ul>
+
+                                            <li>
+                                                <button type="button" class="tooltip2">
+                                                    Comment (2)
+                                                <span class="tooltiptext2">
+                                                    <ul>
+                                                        <li>Haris</li>
+                                                        <li>Gaurav</li>
+                                                    </ul>
+                                                </span>
+                                                </button>
+                                            </li>
+                                            <li>Shared with Haris, Gaurav and
+                                            <button type="button" class="tooltip2">
+                                                4 others
+                                                <span class="tooltiptext2">
+                                                    <ul>
+                                                        <li>Nikhil</li>
+                                                        <li>Ram</li>
+                                                        <li>Katrina</li>
+                                                        <li>Tony</li>
+                                                    </ul>
+                                                </span>
+                                            </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment_box">
+                                        <div class="comment_list">
+                                            <p><b>Gaurav</b> sed do eiusmod tempor</p>
+                                            <ul>
+
+                                                <li>
+                                                    <button type="button">Reply (1)</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="comment_list">
+                                            <p><b>Haris</b> sed do eiusmod tempor</p>
+                                            <ul>
+
+                                                <li>
+                                                    <button type="button">Reply (1)</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="comment_field">
+                                            <input class="form-control" placeholder="Write a comment..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="imgComment" class="recent_grid">
+                                    <div class="activity_subline"><b>Haris</b> uploaded <b>Spring Blowout Special</b> <strong>Sova Newsletter</strong> in <b>JPG</b></div>
+                                    <div class="time">04 Apr 2018 / <span>4hrs</span></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                                    <div class="activity_timeline">
+                                        <ul>
+
+                                            <li>
+                                                <button type="button">
+                                                    Comment (0)
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button">Share</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="psdcomment" class="recent_grid">
+                                    <div class="activity_subline"><b>Swarnendu</b> uploaded <b>Spring Blowout Special</b> <strong>Sova Newsletter</strong> in <b>PSD</b></div>
+                                    <div class="time">04 Apr 2018 / <span>4hrs</span></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                                    <div class="activity_timeline">
+                                        <ul>
+
+                                            <li>
+                                                <button type="button" class="tooltip2">
+                                                    Comment (2)
+                                                <span class="tooltiptext2">
+                                                    <ul>
+                                                        <li>Haris</li>
+                                                        <li>Gaurav</li>
+                                                    </ul>
+                                                </span>
+                                                </button>
+                                            </li>
+                                            <li>Shared with Haris, Gaurav and
+                                            <button type="button" class="tooltip2">
+                                                4 others
+                                                <span class="tooltiptext2">
+                                                    <ul>
+                                                        <li>Nikhil</li>
+                                                        <li>Ram</li>
+                                                        <li>Katrina</li>
+                                                        <li>Tony</li>
+                                                    </ul>
+                                                </span>
+                                            </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment_box">
+                                        <div class="comment_list">
+                                            <p><b>Gaurav</b> sed do eiusmod tempor</p>
+                                            <ul>
+
+                                                <li>
+                                                    <button type="button">Reply (1)</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="comment_list">
+                                            <p><b>Haris</b> sed do eiusmod tempor</p>
+                                            <ul>
+
+                                                <li>
+                                                    <button type="button">Reply (1)</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="comment_field">
+                                            <input class="form-control" placeholder="Write a comment..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="page_pagination">
+                                    <ul class="pagination_list">
+                                        <li><a href="javascript:void(0)"><i class="fa fa-angle-double-left"></i></a></li>
+                                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                                        <li><a href="javascript:void(0)">2</a></li>
+                                        <li><a href="javascript:void(0)">3</a></li>
+                                        <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!---->
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3 col-lg-3 padding_zero">
+
+                        <div class="right_side_list">
+                            <h3 class="heading">To-do list <a href="ToDoList.html">View All</a></h3>
+                            <!--accordion start-->
+                            <div class="todo_list_section">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <a href="#" class="heading">
+                                            <div class="icon"></div>
+                                            <div class="title"><b>Feb 26 :</b> Hypnos Brochure</div>
+                                        </a>
+
+                                        <div class="content">
+                                            <div class="todo_list_content">
+                                                <div class="col-xs-3">
+                                                    <span>Share with :</span>
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <ul class="todolist_name">
+                                                        <li>
+                                                            <button>Katrina</button></li>
+                                                        <li>
+                                                            <button>Tony</button></li>
+                                                        <li>
+                                                            <button>Haris</button></li>
+                                                        <li>
+                                                            <button>Tom</button></li>
+                                                        <li>
+                                                            <button class="todolist_addbtn">+ Add</button></li>
+                                                    </ul>
+                                                    <span class="edit_text"><i class="fa fa-pencil"></i></span>
+                                                    <div class="todo_description_field">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" placeholder="Description" rows="3"></textarea>
+                                                        </div>
+
+                                                        <div class="form_btn2">
+                                                            <input type="button" value="Delete" name="Delete" />
+                                                            <input type="button" value="Done" name="Done" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <a href="#" class="heading">
+                                            <div class="icon"></div>
+                                            <div class="title"><b>Feb 27 :</b> Araam Brochure</div>
+                                        </a>
+
+                                        <div class="content">
+                                            <div class="todo_list_content">
+                                                <div class="col-xs-3">
+                                                    <span>Share with :</span>
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <ul class="todolist_name">
+                                                        <li>
+                                                            <button>Katrina</button></li>
+                                                        <li>
+                                                            <button>Tony</button></li>
+                                                        <li>
+                                                            <button>Haris</button></li>
+                                                        <li>
+                                                            <button>Tom</button></li>
+                                                        <li>
+                                                            <button class="todolist_addbtn">+ Add</button></li>
+                                                    </ul>
+                                                    <span class="edit_text"><i class="fa fa-pencil"></i></span>
+                                                    <div class="todo_description_field">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" placeholder="Description" rows="3"></textarea>
+                                                        </div>
+
+                                                        <div class="form_btn2">
+                                                            <input type="button" value="Delete" name="Delete" />
+                                                            <input type="button" value="Done" name="Done" />
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--accordion end-->
+                        </div>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="copyright_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Copyright &copy; Make My Foam 2019. All Rights Reserved.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Sidenav/sidebar.js"></script>
+    <script src="js/Sidenav/collapsibleMenu.min.js"></script>
+    <script src="js/Sidenav/classtoggle.min.js"></script>
+    <script src="js/Sidenav/jquery.slimscroll.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

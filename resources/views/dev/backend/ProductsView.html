@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make My Foam</title>
+    <link rel="icon" href="img/favIcon.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="fonts/font-awesome.css" rel="stylesheet" />
+    <link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+
+    <!-- Header starts -->
+    <header>
+
+        <!-- Logo starts -->
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="" />
+        </a>
+        <!-- Logo ends -->
+
+        <!-- Header actions starts -->
+        <ul id="header-actions" class="clearfix">
+            <li class="list-box user-admin hidden-xs dropdown">
+                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-user"></i>
+                </a>
+                <ul class="dropdown-menu sm">
+                    <li class="dropdown-content">
+                        <a href="#">Edit Profile</a>
+                        <a href="#">Change Password</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" id="toggleMenu" class="toggle-menu">
+                    <i class="collapse-menu-icon"></i>
+                </button>
+            </li>
+        </ul>
+        <!-- Header actions ends -->
+
+        <div class="custom-search hidden-sm hidden-xs">
+            <input type="text" class="search-query" placeholder="Search here ...">
+            <i class="icon-search3"></i>
+        </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Left sidebar start -->
+    <div class="vertical-nav">
+
+        <!-- Collapse menu starts -->
+        <button class="collapse-menu navButton">
+            <i class="icon-menu2"></i>
+        </button>
+        <!-- Collapse menu ends -->
+
+        <!-- Sidebar menu starts -->
+        <ul class="menu clearfix">
+            <li>
+                <a href="#">
+                    <i class="icon-air-play"></i>
+                    <span class="menu-item">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="Product.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Add Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="ProductsView.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Our Products</span>
+                </a>
+            </li>
+            <li>
+                <a href="FoamCalculator.html">
+                    <i class="fa fa-calculator"></i>
+                    <span class="menu-item">Foam Calculator</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-key"></i>
+                    <span class="menu-item">Change Password</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-layers4"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-layers4"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-layers4"></i>
+                    <span class="menu-item">Page Title</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Sidebar menu ends -->
+    </div>
+    <!-- Left sidebar end -->
+
+    <!-- Dashboard Wrapper Start -->
+    <div class="dashboard-wrapper dashboard-wrapper-lg">
+
+        <!-- Container fluid Starts -->
+        <div class="container-fluid">
+
+            <!-- Top Bar Starts -->
+            <div class="top-bar clearfix">
+                <div class="row gutter">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="page-title">
+                            <h3>Our Products</h3>
+                            <p>Dashboard / <a href="javascript:void()">Our Products</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+                </div>
+            </div>
+            <!-- Top Bar Ends -->
+
+            <!-- Row Starts -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row gutter">
+                                <div class="responsiveTbl">
+                                    <table class="productTbl" width="100%">
+                                        <tr>
+                                            <th width="70px">S No.</th>
+                                            <th>Product Name & Title</th>
+                                            <th>Image</th>
+                                            <th width="280px">Description</th>
+                                            <th width="280px">Sub-Description</th>
+                                            <th>Size</th>
+                                            <th>Price</th>
+                                            <th width="80px">Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><b>RV</b> <span>(High density Extra-firm)</span></td>
+                                            <td>
+                                                <figure>
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <span>+5</span>
+                                                </figure>
+                                            </td>
+                                            <td>Lorem ipsum dolor sit consectetur adipisicing elit.</td>
+                                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
+                                            <td>22&#0176; W x 45&#0176; L x 3&#0176; D</td>
+                                            <td>$59</td>
+                                            <td>
+                                                <div class="action">
+                                                    <button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                    <button class="del"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><b>RV</b> <span>(High density Extra-firm)</span></td>
+                                            <td>
+                                                <figure>
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <span>+3</span>
+                                                </figure>
+                                            </td>
+                                            <td>Lorem ipsum dolor sit consectetur adipisicing elit.</td>
+                                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
+                                            <td>22&#0176; W x 45&#0176; L x 3&#0176; D</td>
+                                            <td>$59</td>
+                                            <td>
+                                                <div class="action">
+                                                    <button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                    <button class="del"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><b>RV</b> <span>(High density Extra-firm)</span></td>
+                                            <td>
+                                                <figure>
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <span>+9</span>
+                                                </figure>
+                                            </td>
+                                            <td>Lorem ipsum dolor sit consectetur adipisicing elit.</td>
+                                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
+                                            <td>22&#0176; W x 45&#0176; L x 3&#0176; D</td>
+                                            <td>$59</td>
+                                            <td>
+                                                <div class="action">
+                                                    <button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                    <button class="del"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><b>RV</b> <span>(High density Extra-firm)</span></td>
+                                            <td>
+                                                <figure>
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <span>+2</span>
+                                                </figure>
+                                            </td>
+                                            <td>Lorem ipsum dolor sit consectetur adipisicing elit.</td>
+                                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
+                                            <td>22&#0176; W x 45&#0176; L x 3&#0176; D</td>
+                                            <td>$59</td>
+                                            <td>
+                                                <div class="action">
+                                                    <button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                    <button class="del"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><b>RV</b> <span>(High density Extra-firm)</span></td>
+                                            <td>
+                                                <figure>
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <img src="img/other/rv.png" style="width:30px;" />
+                                                    <span>+12</span>
+                                                </figure>
+                                            </td>
+                                            <td>Lorem ipsum dolor sit consectetur adipisicing elit.</td>
+                                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
+                                            <td>22&#0176; W x 45&#0176; L x 3&#0176; D</td>
+                                            <td>$59</td>
+                                            <td>
+                                                <div class="action">
+                                                    <button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                    <button class="del"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row Ends -->
+
+
+
+        </div>
+        <!-- Container fluid ends -->
+
+    </div>
+    <!-- Dashboard Wrapper End -->
+
+    <!-- Footer Start -->
+    <footer>
+        Copyright &copy; Make My Foam <span>2019</span>. All Rights Reserved.
+    </footer>
+    <!-- Footer end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollup/jquery.scrollUp.js"></script>
+    <script src="js/bsvalidator/bootstrapValidator.js"></script>
+    <script src="js/bsvalidator/custom-validations.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
